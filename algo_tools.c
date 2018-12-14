@@ -6,32 +6,11 @@
 /*   By: ezonda <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/12 10:23:31 by ezonda            #+#    #+#             */
-/*   Updated: 2018/12/14 18:55:33 by jebrocho         ###   ########.fr       */
+/*   Updated: 2018/12/14 19:11:59 by jebrocho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "fillit.h"
-
-int		ft_check_map(char **map)
-{
-	int i;
-	int j;
-
-	i = 0;
-	j = 0;
-	while (map[i])
-	{
-		while (map[i][j])
-		{
-			if (map[i][j] == 'A')
-				return (1);
-			j++;
-		}
-		i++;
-		j = 0;
-	}
-	return (0);
-}
 
 void	ft_printnmove(int c[7], int d[2], char **map, char **tetri)
 {

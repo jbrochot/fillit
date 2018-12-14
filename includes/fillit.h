@@ -6,7 +6,7 @@
 /*   By: jebrocho <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/28 14:39:40 by jebrocho          #+#    #+#             */
-/*   Updated: 2018/12/14 17:34:51 by ezonda           ###   ########.fr       */
+/*   Updated: 2018/12/14 19:14:18 by jebrocho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,9 +37,7 @@ char	*ft_join_tetri(char *stock[5], char *tetra, int i);
 int		ft_delncheck(char *stock[5], char *tetra, int i);
 void	ft_move_tetri(int c[7]);
 void	ft_first_stock(int c[7], int d[2]);
-char	**ft_create_map2(int nb_tetri, char **map, int c[7]);
 void	ft_move_map(int c[7]);
-int		ft_check_map(char **map);
 void	ft_printnmove(int c[7], int d[2], char **map, char **tetri);
 char	**ft_back_tetri(char **map, char l[1], int c[7], int d[2]);
 char	**ft_rm_tetri(char **map, char letter[1], int mod);

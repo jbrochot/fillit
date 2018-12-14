@@ -6,7 +6,7 @@
 /*   By: ezonda <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/14 13:22:01 by ezonda            #+#    #+#             */
-/*   Updated: 2018/12/14 17:39:08 by ezonda           ###   ########.fr       */
+/*   Updated: 2018/12/14 19:07:46 by jebrocho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,34 +40,6 @@ void	ft_move_map(int c[7])
 		c[0]++;
 		c[1] = 0;
 	}
-}
-
-char	**ft_create_map2(int nb_tetri, char **map, int c[7])
-{
-	int				i;
-	int				j;
-	int				k;
-
-	i = 0;
-	k = 0;
-	j = ft_sqrt(nb_tetri * 4) + c[5];
-	if (!(map = (char**)malloc(sizeof(char*) * j + 1)))
-		return (NULL);
-	while (i < j)
-	{
-		if (!(map[i] = (char*)malloc(sizeof(char) * j)))
-			return (NULL);
-		while (k < j)
-		{
-			map[i][k] = '.';
-			k++;
-		}
-		map[i][k] = '\0';
-		k = 0;
-		i++;
-	}
-	map[j] = NULL;
-	return (map);
 }
 
 char	**ft_back_tetri(char **map, char l[1], int c[7], int d[2])
